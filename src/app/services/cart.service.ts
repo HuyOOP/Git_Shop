@@ -49,12 +49,6 @@ export class CartService {
     }
   ]
 
-  getTotalPrice() : {
-    let total = 0;
-        for (const item of this.item) {
-            total += item.giasp * item.soluong;
-        }
-        return total;
-  }
+  
   
 }

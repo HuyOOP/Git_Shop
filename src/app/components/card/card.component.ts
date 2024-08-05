@@ -33,7 +33,7 @@ export class CardComponent {
   }
 
   getTotalPrice(money: any) {
-    this.cartService.getTotalPrice(money);
+    
   }
 
  }
