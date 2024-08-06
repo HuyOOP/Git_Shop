@@ -1,0 +1,16 @@
+<div id="man-utd">
+    @for (product of cartService.products; track $index) {
+        <app-card [routerLink]="['/product',product.id]" [product]="product"></app-card>
+    }
+</div>
+<div id="arsenal">
+    @for (player of cartService.arsenal; track $index) {
+        <app-card [routerLink]="['/product',player.id]" [product]="player"></app-card>
+    }
+    <div class="ars-logo">
+        <h3>Arsenal's squad</h3>
+
+    </div>
+</div>
+
+  

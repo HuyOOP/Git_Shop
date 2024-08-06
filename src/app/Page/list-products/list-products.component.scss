@@ -1,0 +1,28 @@
+:host {
+  display: block;
+}
+
+#man-utd {
+  width: 90%;
+  height: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  border: 2px solid rgb(13, 10, 14);
+  background-color: rgb(255, 92, 47);
+}
+
+#arsenal {
+  width: 90%;
+  height: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  border: 2px solid greenyellow;
+  background-color: red;
+}
+
+.ars-logo {
+  display: flex;
+  justify-items: end;
+}

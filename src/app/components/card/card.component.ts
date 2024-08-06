@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CartService } from '../../services/cart.service';
+import { ProductModel } from '../../models/product.model';
 
 @Component({
   selector: 'app-card',
@@ -16,11 +17,7 @@ export class CardComponent {
     
   }
   
-  @Input() id: string = "";
-  @Input() name : string = "";
-  @Input() description : string = "";
-  @Input() price : number = 0;
-  @Input() inStock : number = 0;
+  @Input() product !: ProductModel;
   
 
   addToCart(value: any) {

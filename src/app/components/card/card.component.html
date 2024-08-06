@@ -1,15 +1,15 @@
 <div id="card-holder">
-    <h2>{{this.id}}</h2>
-    <h2>{{this.name}}</h2>
-    <h2>{{this.description}}</h2>
-    <h2>{{this.price}}</h2>
-    <h3>{{this.inStock}}</h3>
+    <h2>{{this.product.id}}</h2>
+    <h2>{{this.product.name}}</h2>
+    <h2>{{this.product.description}}</h2>
+    <h2>{{this.product.price}}</h2>
+    <h3>{{this.product.inStock}}</h3>
+
+    <button (click)="addToCart( {
+        id : this.product.id,
+        name: this.product.name,
+        price:this.product.price,
+        quantity : 1
+    })">Click for more detail</button>
+
 </div>
-<button (click)="addToCart( {
-    id : this.id,
-    name: this.name,
-    price:this.price,
-    quantity : 1
-})">Add to cak</button>
-
-
